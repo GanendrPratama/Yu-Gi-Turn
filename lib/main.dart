@@ -55,8 +55,19 @@ class _MyAppState extends State<MyApp> {
       } else if (phase == 'SP') {
         phaseEnabled['MP1'] = true;
       } else if (phase == 'MP1') {
-        phaseEnabled['BP'] = true;
-        phaseEnabled['EP'] = true;
+        if (turnCount == 1) {
+          phaseEnabled = {
+            'DP': false,
+            'SP': false,
+            'MP1': false,
+            'BP': false,
+            'MP2': false,
+            'EP': true,
+          };
+        } else {
+          phaseEnabled['BP'] = true;
+          phaseEnabled['EP'] = true;
+        }
       } else if (phase == 'BP') {
         phaseEnabled['MP2'] = true;
       } else if (phase == 'MP2') {

@@ -1,7 +1,7 @@
-name: ygo_phase_app
-description: "A new Flutter project."
+name: Yu_Gi_Turn
+description: "An App to help Yu-Gi-Oh players track their turn and phase"
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.1
 
 environment:
   sdk: ^3.7.0
